@@ -3,13 +3,8 @@ import FormRegister from "../components/Fragments/FormRegister";
 import { Link } from "react-router-dom";
 const RegisterPage = ()=> {
     return(
-        <AuthLayout title="Register">
+        <AuthLayout title="Register" type="register">
             <FormRegister></FormRegister>
-            <p className="text-sm mt-5 text-center">have an Account?{" "}
-                <Link to="/login" className="font-bold text-blue-600 hover:text-blue-800">
-                    Login
-                </Link>
-            </p>
         </AuthLayout>
     );
 };
